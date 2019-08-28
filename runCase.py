@@ -10,7 +10,6 @@ from common.mysql import Mysql
 from common.excelresult import Res
 from common.mail import Mail
 from common import logger
-import os
 
 # 运行的相对路径
 path = '.'
@@ -183,11 +182,5 @@ if __name__ == '__main__':
 
     mail = Mail()
     mail.send(text,resultpath)
-    # 删除日志文件
-    logpath = '.' + '/lib/logs/all.log'
-#     print(logpath)
-    if not os.path.exists(logpath):
-         pass
-    else:
-        os.remove(logpath)
+
     
