@@ -10,6 +10,7 @@ from common.mysql import Mysql
 from common.excelresult import Res
 from common.mail import Mail
 from common import logger
+import os
 
 # 运行的相对路径
 path = '.'
